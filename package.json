@@ -1,0 +1,63 @@
+{
+  "name": "Usecloud.uniCloud.admin.usemall",
+  "id": "Usecloud.uniCloud.admin.usemall",
+  "version": "1.0.9",
+  "description": "Usecloud.uniCloud.admin.usemall，是基于uni-app和uniCloud的电商应用后台管理",
+  "main": "main.js",
+  "scripts": {
+    "lint:eslint": "eslint --fix --ext \"**/*.{vue,less,css,scss}\"",
+    "lint:prettier": "prettier --write --loglevel warn \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "gc": "git add -A && git-cz && git pull && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/usecloud/usemall"
+  },
+  "keywords": [
+    "admin",
+    "uniCloud",
+    "管理后台",
+    "云后台"
+  ],
+  "author": "Usecloud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitee.com/usecloud/usemall/issues"
+  },
+  "homepage": "https://gitee.com/usecloud/usemall",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "echarts": "^4.4.0",
+    "echarts-map": "^3.0.1",
+    "element-ui": "^2.15.1",
+    "uni-read-pages": "^1.0.5",
+    "vue-clipboard2": "^0.3.1",
+    "vue-countupjs": "^1.0.0",
+    "vue-echarts": "^6.0.0-rc.4",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.7",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
