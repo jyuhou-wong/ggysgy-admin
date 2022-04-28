@@ -1,6 +1,6 @@
-## 艺设公益 uniCloud v1.0.9.211112 管理后台
+## 以艺自强 uniCloud v1.0.9.211112 管理后台
 
-## 【重要】需先运行 [艺设公益 uniCloud 版前后端开源](https://ext.dcloud.net.cn/plugin?id=5764) 项目
+## 【重要】需先运行 [以艺自强 uniCloud 版前后端开源](https://ext.dcloud.net.cn/plugin?id=5764) 项目
 
 ## 否则会遇到各种各样 BUG，因为前端与管理后台关联同一个服务空间，管理后台依赖的公共模块在前端项目中。
 

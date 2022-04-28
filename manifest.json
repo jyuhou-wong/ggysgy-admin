@@ -69,6 +69,11 @@
     "enable": false
   },
   "h5": {
-    "template": "template.h5.html"
+    "template": "template.h5.html",
+    "title": "广工艺设公益管理后台",
+    "router": {
+      "mode": "hash",
+      "base": "/"
+    }
   }
 }

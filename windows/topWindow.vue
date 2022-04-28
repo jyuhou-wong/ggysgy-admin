@@ -7,7 +7,7 @@
       </div>
       <div class="dflex_vertical_c sele_none">
         <el-link v-if="!false" class="crpr" href="https://www.use-cloud.com" target="_blank"
-          >艺设公益 v{{ adminVersion }}</el-link
+          >以艺自强 v{{ adminVersion }}</el-link
         >
         <div @click="informDrawer = true" class="margin_l_50 crpr">
           <el-badge :value="informDatas.length"><i class="iconfont icontongzhi"></i></el-badge>
@@ -20,7 +20,7 @@
               :preview-src-list="user.avatars"
               fit="cover"
             ></el-image>
-            <div class="margin_l_10">{{ user.username || '艺设公益' }}</div>
+            <div class="margin_l_10">{{ user.username || '以艺自强' }}</div>
           </div>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item class="el-icon-edit-outline dflex" command="pwdChange"
@@ -144,11 +144,11 @@
         },
         informDatas: [
           {
-            title: '小程序"艺设公益"代码发布审核结果',
+            title: '小程序"以艺自强"代码发布审核结果',
             ref: 'read0',
             read: 0,
             time: '2020-05-16 00:00',
-            content: '你的小程序"艺设公益"，提审时间2020-05-08 21:18:05，版本审核未通过。',
+            content: '你的小程序"以艺自强"，提审时间2020-05-08 21:18:05，版本审核未通过。',
           },
         ],
       };
