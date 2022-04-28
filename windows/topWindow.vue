@@ -254,11 +254,11 @@
   }
 
   >>> .el-link.el-link--default:hover {
-    color: #ff6a6c;
+    color: #feaa30;
   }
 
   >>> .el-link.is-underline:hover::after {
-    border-bottom: 1px solid #ff6a6c;
+    border-bottom: 1px solid #feaa30;
   }
 
   .header {

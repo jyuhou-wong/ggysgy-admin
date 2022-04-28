@@ -41,7 +41,7 @@
       <el-form-item label="状态">
         <el-switch
           v-model="form.state"
-          active-color="#ff6a6c"
+          active-color="#feaa30"
           inactive-color="#bbb"
           active-value="显示"
           inactive-value="隐藏"

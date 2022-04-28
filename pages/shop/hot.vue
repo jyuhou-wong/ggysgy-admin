@@ -79,7 +79,7 @@
             >
               <el-switch
                 v-model="scope.row.hot"
-                active-color="#ff6a6c"
+                active-color="#feaa30"
                 inactive-color="#bbb"
                 active-value="1"
                 inactive-value="0"

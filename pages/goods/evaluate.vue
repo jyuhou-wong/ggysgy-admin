@@ -68,7 +68,7 @@
             >
               <el-switch
                 v-model="scope.row.state"
-                active-color="#ff6a6c"
+                active-color="#feaa30"
                 inactive-color="#bbb"
                 active-value="显示"
                 inactive-value="隐藏"

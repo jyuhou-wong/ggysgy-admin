@@ -36,7 +36,7 @@
           <el-tooltip :content="scope.row.state == '显示' ? '隐藏' : '显示'" placement="top">
             <el-switch
               v-model="scope.row.state"
-              active-color="#ff6a6c"
+              active-color="#feaa30"
               inactive-color="#bbb"
               active-value="显示"
               inactive-value="隐藏"

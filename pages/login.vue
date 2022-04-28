@@ -150,7 +150,7 @@
     width: 260px;
     padding-left: 6px;
     font-size: 14px;
-    color: #ff6a6c;
+    color: #feaa30;
     border: none;
     border-bottom: 1px solid #d9d9d9;
     border-radius: 0;
@@ -162,7 +162,7 @@
     font-size: 18px;
     font-weight: 800;
     color: #fff;
-    background-color: #ff6a6c;
+    background-color: #feaa30;
     border-radius: 4px;
   }
 </style>

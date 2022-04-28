@@ -7,7 +7,7 @@
       :default-active="onRoutes"
       background-color="#fff"
       text-color="#000"
-      active-text-color="#ff6a6c"
+      active-text-color="#feaa30"
       unique-opened
       router
     >
@@ -461,7 +461,7 @@
   }
 
   >>> .el-submenu__title:hover, >>> .el-menu-item:hover, >>> .el-submenu__title:hover i {
-    color: #ff6a6c !important;
+    color: #feaa30 !important;
     background-color: #fff !important;
   }
 
@@ -490,7 +490,7 @@
     right: 0;
     width: 0.3125rem;
     height: 1.25rem;
-    background-color: #ff6a6c;
+    background-color: #feaa30;
     content: " ";
     transform: translate(0, -50%);
   }

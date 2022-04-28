@@ -8,7 +8,7 @@
             <el-switch
               @change="open_switch_sku"
               v-model="switch_sku"
-              active-color="#ff6a6c"
+              active-color="#feaa30"
               inactive-color="#dcdfe6"
             ></el-switch>
           </el-form-item>

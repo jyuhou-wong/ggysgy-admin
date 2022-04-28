@@ -69,7 +69,7 @@
             >
               <el-switch
                 v-model="scope.row.is_search"
-                active-color="#ff6a6c"
+                active-color="#feaa30"
                 inactive-color="#bbb"
                 active-value="是"
                 inactive-value="否"
@@ -89,7 +89,7 @@
             >
               <el-switch
                 v-model="scope.row.state"
-                active-color="#ff6a6c"
+                active-color="#feaa30"
                 inactive-color="#bbb"
                 active-value="启用"
                 inactive-value="禁用"

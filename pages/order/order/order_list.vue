@@ -66,7 +66,7 @@
                 :preview-src-list="scope.row.imgs"
                 fit="cover"
               ></el-image>
-              <div class="margin_l_5">{{ scope.row.order_member_name || '用云会员' }}</div>
+              <div class="margin_l_5">{{ scope.row.order_member_name || '会员' }}</div>
             </div>
           </template>
         </el-table-column>
