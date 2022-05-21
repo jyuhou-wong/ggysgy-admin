@@ -15,12 +15,7 @@
         <div></div>
         <el-button class="add_btn pos_r padding0" icon="iconfont iconxinzeng" @click="toAdd">新增</el-button>
       </div>
-      <el-table
-        :height="tblHeight"
-        :data="tableDatas"
-        row-key="_id"
-        :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
-      >
+      <el-table :height="tblHeight" :data="tableDatas" row-key="_id" :tree-props="{ children: 'children', hasChildren: 'hasChildren' }">
         <el-table-column prop="name" label="分类名称" width="120"></el-table-column>
         <el-table-column label="排序" width="200" align="center">
           <template slot-scope="scope">
@@ -36,12 +31,7 @@
         <el-table-column prop="_id" label="分类ID" align="center" width="250"></el-table-column>
         <el-table-column label="图片" align="center">
           <template slot-scope="scope">
-            <el-image
-              style="width: 100px; height: 80px;"
-              :preview-src-list="scope.row.imgs"
-              :src="scope.row.img"
-              fit="contain"
-            ></el-image>
+            <el-image style="width: 100px; height: 80px;" :preview-src-list="scope.row.imgs" :src="scope.row.img" fit="contain"></el-image>
           </template>
         </el-table-column>
         <el-table-column prop="create_time" label="创建时间" align="center"></el-table-column>
@@ -81,107 +71,120 @@
 </template>
 
 <script>
-  const __name = 'usemall-goods-category';
-  export default {
-    data() {
-      return {
-        req: {
-          page: 1,
-          rows: 500,
-          orderby: 'sort asc',
-          name: '',
-        },
-        tblHeight: 0,
-        tableDatas: [],
-        allTableDatas: [],
-      };
-    },
-    methods: {
-      async loadData() {
-        this.req.startWith = "pid == ''";
-        if (this.req.name) {
-          this.req.startWith = '/' + this.req.name + '/.test(name)';
-        }
-
-        await this.$db[__name].totree(this.req).then((res) => {
-          if (res.code == 200) {
-            let datas = [];
-            res.datas.forEach((row, idx) => {
-              row.create_time = new Date(row.create_time).format();
-              if (row.children && row.children.length > 0) {
-                row.children.forEach((c) => {
-                  c.create_time = new Date(c.create_time).format();
-                });
-              }
-              row.imgs = [row.img];
-            });
-            res.datas.forEach((row, idx) => {
-              if (row.pid && res.datas.find((x) => x._id == row.pid)) {
-                return;
-              }
-              datas.push(row);
-            });
-            this.tableDatas = datas;
-          }
-        });
+const dbCmd = db.command
+const __name = 'usemall-goods-category'
+export default {
+  data() {
+    return {
+      req: {
+        page: 1,
+        rows: 500,
+        orderby: 'sort asc',
+        name: '',
       },
-      toAdd() {
-        uni.navigateTo({
-          url: `/pages/goods/classify/goods_classify_add_edit?tab=添加分类`,
-          events: {
-            refreshData: () => {
-              this.loadData();
-            },
-          },
-        });
-      },
-      toEdit(id) {
-        uni.navigateTo({
-          url: `/pages/goods/classify/goods_classify_add_edit?id=${id}&tab=编辑分类`,
-          events: {
-            refreshData: () => {
-              this.loadData();
-            },
-          },
-        });
-      },
-      remove(id) {
-        this.$confirm('此操作将永久删除该数据！', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning',
-        }).then(() => {
-          this.$db[__name].remove(id).then((res) => {
-            if (res.code == 200) {
-              this.loadData();
-            }
-          });
-        });
-      },
-      stateChange(row) {
-        this.$db[__name].update(row._id, { state: row.state }).then((res) => {
-          if (res.code == 200) this.loadData();
-        });
-      },
-      sortChange(row) {
-        if (row.sort == '') {
-          return;
-        }
-
-        this.$db[__name].update(row._id, { sort: row.sort }).then((res) => {
-          if (res.code == 200) this.loadData();
-        });
-      },
-    },
-    created() {
-      this.loadData();
-    },
-    updated() {
-      if (!this.tblHeight) {
-        this.tblHeight = this.$refs.tbl.tblHeight;
+      tblHeight: 0,
+      tableDatas: [],
+      allTableDatas: [],
+    }
+  },
+  methods: {
+    async loadData() {
+      this.req.startWith = "pid == ''"
+      if (this.req.name) {
+        this.req.startWith = '/' + this.req.name + '/.test(name)'
       }
+
+      await this.$db[__name].totree(this.req).then(res => {
+        if (res.code == 200) {
+          let datas = []
+          res.datas.forEach((row, idx) => {
+            row.create_time = new Date(row.create_time).format()
+            if (row.children && row.children.length > 0) {
+              row.children.forEach(c => {
+                c.create_time = new Date(c.create_time).format()
+              })
+            }
+            row.imgs = [row.img]
+          })
+          res.datas.forEach((row, idx) => {
+            if (row.pid && res.datas.find(x => x._id == row.pid)) {
+              return
+            }
+            datas.push(row)
+          })
+          this.tableDatas = datas
+        }
+      })
     },
-  };
+    toAdd() {
+      uni.navigateTo({
+        url: `/pages/goods/classify/goods_classify_add_edit?tab=添加分类`,
+        events: {
+          refreshData: () => {
+            this.loadData()
+          },
+        },
+      })
+    },
+    toEdit(id) {
+      uni.navigateTo({
+        url: `/pages/goods/classify/goods_classify_add_edit?id=${id}&tab=编辑分类`,
+        events: {
+          refreshData: () => {
+            this.loadData()
+          },
+        },
+      })
+    },
+    remove(id) {
+      this.$confirm('此操作将永久删除该数据！', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning',
+      }).then(() => {
+        this.$db[__name]
+          .where(
+            dbCmd.or(
+              {
+                _id: id,
+              },
+              {
+                pid: id,
+              }
+            )
+          )
+          .remove()
+          .then(res => {
+            if (res.code == 200) {
+              this.loadData()
+            }
+          })
+      })
+    },
+    stateChange(row) {
+      this.$db[__name].update(row._id, { state: row.state }).then(res => {
+        if (res.code == 200) this.loadData()
+      })
+    },
+    sortChange(row) {
+      if (row.sort == '') {
+        return
+      }
+
+      this.$db[__name].update(row._id, { sort: row.sort }).then(res => {
+        if (res.code == 200) this.loadData()
+      })
+    },
+  },
+  created() {
+    this.loadData()
+  },
+  updated() {
+    if (!this.tblHeight) {
+      this.tblHeight = this.$refs.tbl.tblHeight
+    }
+  },
+}
 </script>
 
 <style></style>
