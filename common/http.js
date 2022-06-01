@@ -1,14 +1,17 @@
 // 导入axios
-import { Message, Loading } from 'element-ui';
+import {
+  Message,
+  Loading
+} from 'element-ui';
 import axios from 'axios';
 
 // 创建一个副本 设置基地址
-axios.defaults.baseURL = 'https://mall-os-api.use-cloud.com/nb/';
+axios.defaults.baseURL = '/';
 let loading;
 window.$axios_config = {};
 // axios的拦截器
 axios.interceptors.request.use(
-  function (config) {
+  function(config) {
     if (window.$axios_config && window.$axios_config.loading) {
       loading = Loading.service({
         lock: true,
@@ -28,7 +31,7 @@ axios.interceptors.request.use(
     // 在发请求之后干一些事
     return config;
   },
-  function (error) {
+  function(error) {
     window.$axios_config.loading = true;
     // 隐藏 loading
     loading && loading.close();
@@ -40,7 +43,7 @@ axios.interceptors.request.use(
 let cnt_401 = 0;
 // 响应拦截器
 axios.interceptors.response.use(
-  function (response) {
+  function(response) {
     // console.log(response);
     window.$axios_config.loading = true;
 
@@ -65,7 +68,7 @@ axios.interceptors.response.use(
     loading && loading.close();
     return response.data;
   },
-  function (error) {
+  function(error) {
     // 在响应出错的时候
 
     window.$axios_config.loading = true;

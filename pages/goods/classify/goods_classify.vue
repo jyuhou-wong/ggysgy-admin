@@ -71,6 +71,7 @@
 </template>
 
 <script>
+const db = uniCloud.database()
 const dbCmd = db.command
 const __name = 'usemall-goods-category'
 export default {

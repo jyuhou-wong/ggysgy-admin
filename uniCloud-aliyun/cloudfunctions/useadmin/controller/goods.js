@@ -89,7 +89,6 @@ module.exports = class GoodsController extends Controller {
     if (!req.detail) this.throw('商品详情参数不存在');
     if (!req.goods.name) this.throw('商品名称必填');
     if (!req.goods.cid) this.throw('请选择商品分类');
-    if (req.goods.price <= 0) this.throw('商城价格不能小于0');
     if (!req.goods.img) this.throw('请上传商品主图');
   }
 

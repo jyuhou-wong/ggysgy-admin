@@ -69,11 +69,20 @@ export default {
       let flag = true
       this.$refs.basic.getData((res, valid) => {
         flag = valid
-        if ((flag && res.price <= 0) || res.price == '') {
-          this.$message({
-            message: '商城价必须大于0',
-            type: 'success',
-          })
+
+        if (!res.cid) {
+          // this.$message({
+          //   message: '请选择商品分类',
+          //   type: 'error',
+          // })
+          flag = false
+        }
+
+        if (!res.name) {
+          // this.$message({
+          //   message: '请输入商品名称',
+          //   type: 'error',
+          // })
           flag = false
         }
 

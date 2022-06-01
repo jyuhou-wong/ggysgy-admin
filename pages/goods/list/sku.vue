@@ -121,7 +121,6 @@ export default {
       this.goods = res
     },
     affirm() {
-      console.log(123)
       // 规格
       if (this.dynamicTags_spec.length > 0) {
         this.dynamicTags_spec.forEach((spec, spec_idx) => {
