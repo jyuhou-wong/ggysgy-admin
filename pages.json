@@ -25,11 +25,9 @@
       }
     }
   ],
-  "subPackages": [
-    {
+  "subPackages": [{
       "root": "pages/shop",
-      "pages": [
-        {
+      "pages": [{
           "path": "home/page",
           "style": {
             "navigationBarTitleText": "店铺首页"
@@ -45,13 +43,22 @@
           "path": "home/carousel_add_edit"
         },
         {
-          "path": "classify/classify_navigation",
+          "path": "graphic_classify/classify_navigation",
           "style": {
-            "navigationBarTitleText": "分类导航"
+            "navigationBarTitleText": "图文分类"
           }
         },
         {
-          "path": "classify/classify_navigation_add_edit"
+          "path": "graphic_classify/classify_navigation_add_edit"
+        },
+        {
+          "path": "card_classify/classify_navigation",
+          "style": {
+            "navigationBarTitleText": "卡片分类"
+          }
+        },
+        {
+          "path": "card_classify/classify_navigation_add_edit"
         },
         {
           "path": "limit",
@@ -90,8 +97,7 @@
     },
     {
       "root": "pages/goods",
-      "pages": [
-        {
+      "pages": [{
           "path": "list/goods_list",
           "style": {
             "navigationBarTitleText": "商品列表"
@@ -134,8 +140,7 @@
     },
     {
       "root": "pages/order",
-      "pages": [
-        {
+      "pages": [{
           "path": "order/order_list",
           "style": {
             "navigationBarTitleText": "订单列表"
@@ -160,8 +165,7 @@
     },
     {
       "root": "pages/member",
-      "pages": [
-        {
+      "pages": [{
           "path": "list/member_list",
           "style": {
             "navigationBarTitleText": "会员列表"
@@ -174,8 +178,7 @@
     },
     {
       "root": "pages/app",
-      "pages": [
-        {
+      "pages": [{
           "path": "mp/mp_page",
           "style": {
             "navigationBarTitleText": "小程序"
@@ -188,8 +191,7 @@
     },
     {
       "root": "pages/system_set",
-      "pages": [
-        {
+      "pages": [{
           "path": "account/account",
           "style": {
             "navigationBarTitleText": "账号管理"
@@ -211,14 +213,12 @@
     },
     {
       "root": "pages/log",
-      "pages": [
-        {
-          "path": "operation_log",
-          "style": {
-            "navigationBarTitleText": "操作日志"
-          }
+      "pages": [{
+        "path": "operation_log",
+        "style": {
+          "navigationBarTitleText": "操作日志"
         }
-      ]
+      }]
     }
   ],
   "globalStyle": {
