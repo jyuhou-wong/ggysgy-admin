@@ -241,7 +241,9 @@
   import vCountup from 'vue-countupjs';
   import echarts from 'echarts';
   import china from 'echarts-map/json/china.json';
+  
   echarts.registerMap('china', china);
+  
   export default {
     components: { vCountup },
     data() {
