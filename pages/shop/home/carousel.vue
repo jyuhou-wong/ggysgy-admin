@@ -114,7 +114,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-app-carousel';
+  const __name = 'ggysgy-app-carousel';
   export default {
     data() {
       return {

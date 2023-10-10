@@ -35,7 +35,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-order-detail';
+  const __name = 'ggysgy-order-detail';
   export default {
     data() {
       return {

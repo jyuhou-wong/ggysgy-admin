@@ -54,8 +54,8 @@
 
 <script>
   import bus from '@/common/bus';
-  const __name = 'usemall-app-carousel';
-  const __mpPage = 'usemall-app-wxmini-page';
+  const __name = 'ggysgy-app-carousel';
+  const __mpPage = 'ggysgy-app-wxmini-page';
   export default {
     data() {
       return {

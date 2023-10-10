@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-order-log';
+  const __name = 'ggysgy-order-log';
   export default {
     data() {
       return {

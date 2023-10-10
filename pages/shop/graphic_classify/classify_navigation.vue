@@ -107,7 +107,7 @@
 </template>
 
 <script>
-const __name = 'usemall-app-category'
+const __name = 'ggysgy-app-category'
 export default {
   data() {
     return {

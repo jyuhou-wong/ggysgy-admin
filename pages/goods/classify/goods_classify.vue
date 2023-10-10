@@ -73,7 +73,7 @@
 <script>
 const db = uniCloud.database()
 const dbCmd = db.command
-const __name = 'usemall-goods-category'
+const __name = 'ggysgy-goods-category'
 export default {
   data() {
     return {

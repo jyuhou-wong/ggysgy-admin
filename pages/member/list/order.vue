@@ -92,7 +92,7 @@
 
 <script>
   import vCountup from 'vue-countupjs';
-  const __name = 'usemall-order, usemall-order-detail';
+  const __name = 'ggysgy-order, ggysgy-order-detail';
   export default {
     components: { vCountup },
     data() {
@@ -148,7 +148,7 @@
                 }
                 row.imgs = [row.order_member_headimg];
                 row.create_time = new Date(row.create_time).format();
-                row.order_details = row.order_id['usemall-order-detail'];
+                row.order_details = row.order_id['ggysgy-order-detail'];
                 row.order_details.every((x) => (x.imgs = [x.goods_img]));
                 row.order_id = row.order_details[0].order_id;
               });

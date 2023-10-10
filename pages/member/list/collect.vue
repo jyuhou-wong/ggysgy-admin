@@ -41,7 +41,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-member-collect, usemall-goods';
+  const __name = 'ggysgy-member-collect, ggysgy-goods';
   export default {
     data() {
       return {

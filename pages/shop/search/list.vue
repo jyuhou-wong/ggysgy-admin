@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-search-history';
+  const __name = 'ggysgy-search-history';
   export default {
     data() {
       return {

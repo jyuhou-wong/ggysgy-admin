@@ -47,9 +47,9 @@
 <script>
 import bus from '@/common/bus'
 import TreeSelect from '../../../components/tree_select'
-const __goodsCategory = 'usemall-goods-category'
-const __mpPage = 'usemall-app-wxmini-page'
-const __name = 'usemall-app-category'
+const __goodsCategory = 'ggysgy-goods-category'
+const __mpPage = 'ggysgy-app-wxmini-page'
+const __name = 'ggysgy-app-category'
 export default {
   components: { TreeSelect },
   data() {

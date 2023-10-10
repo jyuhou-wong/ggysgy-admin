@@ -195,8 +195,8 @@
 
 <script>
   import vCountup from 'vue-countupjs';
-  const __name = 'usemall-goods';
-  const __goodsCategory = 'usemall-goods-category';
+  const __name = 'ggysgy-goods';
+  const __goodsCategory = 'ggysgy-goods-category';
   export default {
     components: { vCountup },
     data() {

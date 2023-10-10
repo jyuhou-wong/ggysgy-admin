@@ -42,7 +42,7 @@
 
 <script>
   import bus from '@/common/bus';
-  const __name = 'usemall-goods-category';
+  const __name = 'ggysgy-goods-category';
   export default {
     props: {},
     data() {

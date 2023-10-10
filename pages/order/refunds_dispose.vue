@@ -101,7 +101,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-order-refund';
+  const __name = 'ggysgy-order-refund';
   export default {
     data() {
       return {

@@ -19,9 +19,9 @@ import basic from './basic'
 import detail from './detail.vue'
 import sku from './sku'
 import shareSet from './share_set'
-const __goodsCategory = 'usemall-goods-category'
-const __tag = 'usemall-goods-tag'
-const __name = 'usemall-goods'
+const __goodsCategory = 'ggysgy-goods-category'
+const __tag = 'ggysgy-goods-tag'
+const __name = 'ggysgy-goods'
 export default {
   components: {
     basic,

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-order-pay';
+  const __name = 'ggysgy-order-pay';
   export default {
     data() {
       return {

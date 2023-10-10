@@ -185,7 +185,7 @@
 
 <script>
   import vCountup from 'vue-countupjs';
-  const __name = 'usemall-order';
+  const __name = 'ggysgy-order';
   export default {
     components: { vCountup },
     data() {

@@ -103,7 +103,7 @@
   import footprint from './footprint';
   import collect from './collect';
   import consigneeAddress from './consignee_address';
-  const __name = 'usemall-member';
+  const __name = 'ggysgy-member';
   export default {
     components: {
       vCountup,
@@ -162,10 +162,10 @@
         });
         let start = new Date().getTime();
         const totalDatas = await Promise.all([
-          this.$db['usemall-order'].collection().where({ is_delete: 0, create_uid: this.dataId }).count(),
-          this.$db['usemall-goods-history'].collection().where({ create_uid: this.dataId }).count(),
-          this.$db['usemall-member-collect'].collection().where({ create_uid: this.dataId }).count(),
-          this.$db['usemall-member-address'].collection().where({ create_uid: this.dataId }).count(),
+          this.$db['ggysgy-order'].collection().where({ is_delete: 0, create_uid: this.dataId }).count(),
+          this.$db['ggysgy-goods-history'].collection().where({ create_uid: this.dataId }).count(),
+          this.$db['ggysgy-member-collect'].collection().where({ create_uid: this.dataId }).count(),
+          this.$db['ggysgy-member-address'].collection().where({ create_uid: this.dataId }).count(),
         ]);
 
         this.totalObj.order_cnt = totalDatas[0].result.total;

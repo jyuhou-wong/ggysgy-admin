@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-app-share';
+  const __name = 'ggysgy-app-share';
   export default {
     data() {
       return {

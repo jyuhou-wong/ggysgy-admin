@@ -175,7 +175,7 @@
   import log from './log';
   import evaluate from './evaluate';
   import pay from './pay';
-  const __name = 'usemall-order';
+  const __name = 'ggysgy-order';
   export default {
     components: { consignee, goods, log, evaluate, pay },
     data() {

@@ -9,4 +9,4 @@
 // 详细JQL语法，请参考 https://uniapp.dcloud.net.cn/uniCloud/clientdb?id=jsquery
 
 // 下面示例查询uni-id-users表的所有数据
-db.collection('usemall-goods').where('in(_id, ["608256982c8abc000166ce1e","6083f044b09d4a000176f98c"])').update({ "limited": 1 });
+db.collection('ggysgy-goods').where('in(_id, ["608256982c8abc000166ce1e","6083f044b09d4a000176f98c"])').update({ "limited": 1 });

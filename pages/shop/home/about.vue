@@ -18,7 +18,7 @@
 
 <script>
   import E from 'wangeditor';
-  const __name = 'usemall-app-about';
+  const __name = 'ggysgy-app-about';
   export default {
     data() {
       return {

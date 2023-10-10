@@ -17,7 +17,7 @@
 
 <script>
   import bus from '@/common/bus';
-  const __name = 'usemall-search-hot';
+  const __name = 'ggysgy-search-hot';
   export default {
     data() {
       return {

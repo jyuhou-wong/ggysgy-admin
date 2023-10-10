@@ -124,7 +124,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-goods-tag';
+  const __name = 'ggysgy-goods-tag';
   export default {
     data() {
       return {

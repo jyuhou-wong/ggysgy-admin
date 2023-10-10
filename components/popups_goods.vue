@@ -74,7 +74,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-goods';
+  const __name = 'ggysgy-goods';
   export default {
     data() {
       return {

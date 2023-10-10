@@ -120,7 +120,7 @@
 <script>
   import vCountup from 'vue-countupjs';
   import popupsGoods from '@/components/popups_goods';
-  const __name = 'usemall-goods';
+  const __name = 'ggysgy-goods';
   export default {
     components: { vCountup, popupsGoods },
     data() {

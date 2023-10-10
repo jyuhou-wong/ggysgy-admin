@@ -101,7 +101,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-member';
+  const __name = 'ggysgy-member';
   export default {
     data() {
       return {

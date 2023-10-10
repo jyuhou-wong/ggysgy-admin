@@ -21,7 +21,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-order-parameter';
+  const __name = 'ggysgy-order-parameter';
   export default {
     data() {
       return {

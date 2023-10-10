@@ -42,7 +42,7 @@
 </template>
 
 <script>
-  const __name = 'usemall-goods-history, usemall-goods';
+  const __name = 'ggysgy-goods-history, ggysgy-goods';
   export default {
     data() {
       return {

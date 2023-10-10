@@ -57,7 +57,7 @@
 
 <script>
   import bus from '@/common/bus';
-  const __name = 'usemall-goods-comment';
+  const __name = 'ggysgy-goods-comment';
   export default {
     data() {
       return {
